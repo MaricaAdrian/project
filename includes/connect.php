@@ -94,3 +94,4 @@ function deleteFromWhereId($table, $id)
         return 0;
     }
 }
+
