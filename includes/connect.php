@@ -7,6 +7,8 @@ if(!$db)
     echo "Error connecting to db!" . mysqli_connect_error();
 }
 
+session_start();
+
 /* 
 Cum se foloseste:
 
@@ -95,3 +97,9 @@ function deleteFromWhereId($table, $id)
     }
 }
 
+function redirect($location)
+{
+    header("Location: " . $location);
+
+    return null;
+}

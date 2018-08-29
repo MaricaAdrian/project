@@ -1,3 +1,15 @@
+<?php 
+
+  include('./includes/connect.php');
+
+  
+  if(!isset($_SESSION['email']))
+  {
+    redirect('admin_login.php');
+  }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
