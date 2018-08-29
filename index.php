@@ -15,7 +15,7 @@
         include './includes/menu.php';
     ?>
 
-    asdfasdfasdfsdsfasdfasdfasdfas
+    
     <?php
         include './includes/footer.php';
     ?>
