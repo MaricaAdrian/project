@@ -1,6 +1,7 @@
 <?php
             include './includes/header.php';
 
+        session_start();
 
         if(isset($_POST['submit']))
         {
@@ -10,11 +11,16 @@
            
             $query  = mysqli_query($db, "SELECT id FROM admins WHERE email = '".$email."' AND username = '".$username."' AND password = '".$password."' ");
         
-             if (mysqli_num_rows($query))
-               {
-                  $_SESSION['username'] = $username;
-                  redirect("index.php");
-                }
+            
+            if (mysqli_num_rows($query))
+            {
+                while($row = mysqli_fetch_array($query, MYSQLI_BOTH))
+                {
+                    $_SESSION['username'] = $username;
+                    redirect("index.php");
+                }  
+                
+            }
         }
         
     

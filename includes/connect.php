@@ -6,8 +6,6 @@ if(!$db)
 {
     echo "Error connecting to db!" . mysqli_connect_error();
 }
-<<<<<<< HEAD
-=======
 
 /* 
 Cum se foloseste:
@@ -97,4 +95,3 @@ function deleteFromWhereId($table, $id)
     }
 }
 
->>>>>>> 6324f1a59129a7f1a0102d1f20c73e583b7a612e
