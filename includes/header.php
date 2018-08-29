@@ -16,3 +16,4 @@
 
 
 <link type="text/css" rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link type="text/css" rel="stylesheet" href="assets/css/style.css">
